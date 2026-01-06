@@ -1,5 +1,5 @@
 ---
-layout: page
+layout: default
 title: Links
 nav: main
 order: 4

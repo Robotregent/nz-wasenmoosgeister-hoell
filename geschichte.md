@@ -1,5 +1,5 @@
 ---
-layout: page
+layout: default
 title: Geschichte
 nav: main
 order: 2

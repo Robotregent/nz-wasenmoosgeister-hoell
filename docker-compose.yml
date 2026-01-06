@@ -1,0 +1,14 @@
+version: '3.8'
+
+services:
+  jekyll:
+    build: .
+    volumes:
+      - .:/srv/jekyll:cached
+    ports:
+      - "4000:4000"
+    environment:
+      JEKYLL_ENV: development
+    working_dir: /srv/jekyll
+    command: /usr/local/bin/start.sh
+    tty: true

@@ -1,5 +1,5 @@
 ---
-layout: page
+layout: default
 title: Datenschutz
 nav: footer
 order: 3

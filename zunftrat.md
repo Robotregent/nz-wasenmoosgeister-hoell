@@ -1,5 +1,5 @@
 ---
-layout: page
+layout: default
 title: Zunftrat
 nav: main
 order: 3

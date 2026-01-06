@@ -34,8 +34,11 @@ exclude:
   - Gemfile
   - Gemfile.lock
   - node_modules
-  - vendor
-
+  - docker-compose.yml
+  - start.sh
+  - _site 
+  - .jekyll-cache  
+  - vendor 
 # Include hidden files (optional)
 # include:
 #   - .htaccess

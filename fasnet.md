@@ -1,5 +1,5 @@
 ---
-layout: page
+layout: default
 title: Fasnet 2026
 nav: main
 order: 1
