@@ -19,8 +19,8 @@ highlighter: rouge
 # theme: minima
 
 # Plugins (GitHub Pages–approved plugins only)
-plugins:
-  - jekyll-feed
+# plugins:
+#   - jekyll-feed
 
 # Collections (optional, but common)
 collections:
