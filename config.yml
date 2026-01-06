@@ -23,10 +23,10 @@ highlighter: rouge
 #   - jekyll-feed
 
 # Collections (optional, but common)
-collections:
-  pages:
-    output: true
-    permalink: /:name/
+# collections:
+#   pages:
+#     output: true
+#     permalink: /:name/
 
 # Exclude files from build
 exclude:
