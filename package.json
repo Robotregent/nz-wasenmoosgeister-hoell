@@ -4,8 +4,8 @@
   "description": "",
   "main": "index.js",
   "scripts": {
-    "build:css": "tailwindcss -i ./assets/css/tailwind.css -o ./dist/main.css --minify",
-    "watch:css": "tailwindcss -i ./assets/css/tailwind.css -o ./dist/main.css --watch"
+    "build": "npx @tailwindcss/cli -i ./assets/css/tailwind.css -o ./assets/css/main.css --minify",
+    "watch": "npx @tailwindcss/cli -i ./assets/css/tailwind.css -o ./assets/css/main.css --watch"
   },
   "repository": {
     "type": "git",
@@ -18,11 +18,8 @@
     "url": "https://github.com/Robotregent/nz-wasenmoosgeister-hoell/issues"
   },
   "homepage": "https://github.com/Robotregent/nz-wasenmoosgeister-hoell#readme",
-  "devDependencies": {
-    "autoprefixer": "^10.4.23",
-    "tailwindcss": "^4.1.18"
-  },
   "dependencies": {
-    "@tailwindcss/cli": "^4.1.18"
+    "@tailwindcss/cli": "^4.1.18",
+    "tailwindcss": "^4.1.18"
   }
 }
