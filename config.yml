@@ -1,0 +1,41 @@
+# Site settings
+title: NZ Wasenmoosgeister Höll
+description: >-
+  Wasenmoos - de Goischt isch los
+baseurl: "/nz-wasenmoosgeister-hoell" # leave empty for user site, or "/repo-name" for project site
+url: "https://robotregent.github.io"
+
+# Author info (optional, used by many themes)
+author:
+  name: Fabian Schneider
+  email: fs@bit-care.de
+
+# Build settings
+markdown: kramdown
+highlighter: rouge
+
+# Theme
+# Do NOT set `theme:` if you're using a custom theme in the repo
+# theme: minima
+
+# Plugins (GitHub Pages–approved plugins only)
+plugins:
+  - jekyll-feed
+
+# Collections (optional, but common)
+collections:
+  pages:
+    output: true
+    permalink: /:name/
+
+# Exclude files from build
+exclude:
+  - README.md
+  - Gemfile
+  - Gemfile.lock
+  - node_modules
+  - vendor
+
+# Include hidden files (optional)
+# include:
+#   - .htaccess

@@ -1,0 +1,54 @@
+<header class="bg-white border-b">
+  <div class="max-w-7xl mx-auto px-4">
+    <div class="flex h-16 items-center justify-between">
+
+      <!-- Logo / Site title -->
+      <a href="{{ site.baseurl }}/"
+         class="text-lg font-semibold">
+        {{ site.title }}
+      </a>
+
+      <!-- Desktop nav -->
+      <nav class="hidden md:flex gap-6">
+        {% assign main_pages = site.pages
+          | where: "nav", "main"
+          | sort: "order" %}
+
+        {% for p in main_pages %}
+          <a href="{{ site.baseurl }}{{ p.url }}"
+             class="text-gray-700 hover:text-black transition">
+            {{ p.title }}
+          </a>
+        {% endfor %}
+      </nav>
+
+      <!-- Burger button -->
+      <button
+        id="menu-toggle"
+        class="md:hidden inline-flex items-center justify-center rounded-md p-2 text-gray-700 hover:bg-gray-100"
+        aria-label="Open menu">
+        <!-- Burger icon -->
+        <svg class="h-6 w-6" fill="none" stroke="currentColor"
+             viewBox="0 0 24 24">
+          <path stroke-linecap="round"
+                stroke-linejoin="round"
+                stroke-width="2"
+                d="M4 6h16M4 12h16M4 18h16" />
+        </svg>
+      </button>
+
+    </div>
+  </div>
+
+  <!-- Mobile menu -->
+  <div id="mobile-menu" class="hidden md:hidden border-t bg-white">
+    <nav class="px-4 py-4 flex flex-col gap-3">
+      {% for p in main_pages %}
+        <a href="{{ site.baseurl }}{{ p.url }}"
+           class="block text-gray-700 hover:text-black">
+          {{ p.title }}
+        </a>
+      {% endfor %}
+    </nav>
+  </div>
+</header>
