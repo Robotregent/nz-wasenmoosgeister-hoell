@@ -11,6 +11,7 @@
       <!-- Desktop nav -->
       <nav class="hidden md:flex gap-6">
         {% assign main_pages = site.pages
+          | where: "nav", "main"
           | sort: "order" %}
 
         {% for p in main_pages %}
