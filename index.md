@@ -3,4 +3,7 @@ layout: default
 title: Startseite
 permalink: /
 ---
-# Willkommen!
+
+# Herzlich Willkommen auf den Internetseiten der Narrenzunft Wasenmoosgeister Höll e.V.
+
+> Wasenmoos – de Goischt isch los
