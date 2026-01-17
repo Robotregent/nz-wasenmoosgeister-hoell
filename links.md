@@ -8,7 +8,7 @@ permalink: /links/
 
 # Links
 
-## Internetseiten Tettnanger Narrenzünfte
+## Tettnanger Narrenzünfte
 
 - [NZ Kogenmale Obereisenbach](http://www.kogenmale.de)
 - [NZ Arberweible Obereisenbach](http://www.arberweible.de)

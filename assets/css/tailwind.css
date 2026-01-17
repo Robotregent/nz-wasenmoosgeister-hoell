@@ -1,3 +1,58 @@
 @import "tailwindcss";
 
 /* Your custom CSS here */
+
+@layer base {
+  /* Headline styling */
+  main h1 {
+    @apply text-3xl md:text-4xl font-semibold tracking-wide text-emerald-950 mb-6 border-b-4 border-emerald-900/70 pb-2;
+  }
+
+  main h2 {
+    @apply mt-10 mb-4 text-2xl font-semibold text-emerald-900;
+  }
+
+  main h2 + p,
+  main h2 + table,
+  main h2 + ul,
+  main h2 + ol {
+    @apply mt-2;
+  }
+
+  /* Quote styling */
+  main blockquote {
+    @apply mt-6 mb-8 border-l-4 border-emerald-900/70 pl-4 italic text-lg md:text-xl text-emerald-950/90;
+  }
+
+  /* Style all markdown tables inside the main content area */
+  main table {
+    @apply w-full text-sm text-left border-separate border-spacing-y-2;
+  }
+
+  main thead {
+    @apply text-xs font-semibold text-emerald-950;
+  }
+
+  main th,
+  main td {
+    @apply px-2 py-1 align-top;
+  }
+
+  /* Keep date and event name from wrapping awkwardly */
+  main td:first-child,
+  main td:nth-child(2) {
+    @apply whitespace-nowrap;
+  }
+
+  /* CSS-only hero image for pages that set body_class: has-hero */
+  body.has-hero main::before {
+    content: "";
+    display: block;
+    height: 260px;
+    /* relative to assets/css/main.css -> resolves to /.../assets/img/top.png */
+    background-image: url("../img/top.png");
+    background-size: cover;
+    background-position: left;
+    @apply rounded-2xl shadow-2xl border-4 border-emerald-900 mb-10;
+  }
+}

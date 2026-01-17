@@ -14,6 +14,12 @@
           | where: "nav", "main"
           | sort: "order" %}
 
+        <!-- Explicit home link -->
+        <a href="{{ site.baseurl }}/"
+           class="text-amber-100 hover:text-amber-300 transition">
+          Startseite
+        </a>
+
         {% for p in main_pages %}
           <a href="{{ site.baseurl }}{{ p.url }}"
              class="text-amber-100 hover:text-amber-300 transition">
@@ -43,6 +49,12 @@
   <!-- Mobile menu -->
   <div id="mobile-menu" class="hidden md:hidden border-t border-emerald-900 bg-emerald-950/95">
     <nav class="px-4 py-4 flex flex-col gap-3">
+      <!-- Explicit home link -->
+      <a href="{{ site.baseurl }}/"
+         class="block text-amber-100 hover:text-amber-300">
+        Startseite
+      </a>
+
       {% for p in main_pages %}
         <a href="{{ site.baseurl }}{{ p.url }}"
            class="block text-amber-100 hover:text-amber-300">

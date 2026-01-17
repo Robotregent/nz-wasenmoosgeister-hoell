@@ -3,11 +3,11 @@
 <head>
     {% include head.html %}
 </head>
-<body class="min-h-screen flex flex-col bg-gradient-to-b from-stone-100 via-amber-50 to-stone-200 text-stone-900">
+<body class="min-h-screen flex flex-col bg-gradient-to-b from-stone-100 via-amber-50 to-stone-200 text-stone-900 {{ page.body_class }}">
 
     {% include nav-main.html %}
 
-    <main class="flex-1 max-w-7xl mx-auto px-4 py-8">
+    <main class="flex-1 w-full max-w-[900px] mx-auto px-4 py-8">
         {{ content }}
     </main>
 
