@@ -1,10 +1,10 @@
-<header class="bg-white border-b">
+<header class="bg-emerald-950 border-b border-emerald-900 text-amber-100 shadow-md">
   <div class="max-w-7xl mx-auto px-4">
     <div class="flex h-16 items-center justify-between">
 
       <!-- Logo / Site title -->
       <a href="{{ site.baseurl }}/"
-         class="text-lg font-semibold">
+         class="text-lg font-semibold tracking-wide text-amber-100">
         {{ site.title }}
       </a>
 
@@ -16,7 +16,7 @@
 
         {% for p in main_pages %}
           <a href="{{ site.baseurl }}{{ p.url }}"
-             class="text-gray-700 hover:text-black transition">
+             class="text-amber-100 hover:text-amber-300 transition">
             {{ p.title }}
           </a>
         {% endfor %}
@@ -25,7 +25,7 @@
       <!-- Burger button -->
       <button
         id="menu-toggle"
-        class="md:hidden inline-flex items-center justify-center rounded-md p-2 text-gray-700 hover:bg-gray-100"
+        class="md:hidden inline-flex items-center justify-center rounded-md p-2 text-amber-100 hover:bg-emerald-900/70"
         aria-label="Open menu">
         <!-- Burger icon -->
         <svg class="h-6 w-6" fill="none" stroke="currentColor"
@@ -41,11 +41,11 @@
   </div>
 
   <!-- Mobile menu -->
-  <div id="mobile-menu" class="hidden md:hidden border-t bg-white">
+  <div id="mobile-menu" class="hidden md:hidden border-t border-emerald-900 bg-emerald-950/95">
     <nav class="px-4 py-4 flex flex-col gap-3">
       {% for p in main_pages %}
         <a href="{{ site.baseurl }}{{ p.url }}"
-           class="block text-gray-700 hover:text-black">
+           class="block text-amber-100 hover:text-amber-300">
           {{ p.title }}
         </a>
       {% endfor %}
